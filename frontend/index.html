@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> LB02 I Form Validation </title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/datepicker.css"/>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+<div class="tm-main-content" id="top">
+    <div class="tm-top-bar-bg"></div>
+    <div class="tm-top-bar" id="tm-top-bar">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg narbar-light">
+                    <a class="navbar-brand mr-auto" href="#">
+                        <img src="style/img/logo.png" alt="Site logo">
+                    </a>
+                    <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                            data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#top"> Home <span
+                                        class="sr-only"> (current) </span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tm-section-2"> Destinations </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tm-section-4"> Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="tm-page-wrap mx-auto">
+        <section class="tm-banner">
+            <div class="tm-container-outer tm-banner-bg">
+                <div class="container">
+                    <div class="row tm-banner-row tm-banner-row-header">
+                        <div class="col-xs-12">
+                            <!-- headline -->
+                            <div class="tm-banner-header">
+                                <img src="style/img/dots-3.png" alt="Dots">
+                                <p class="tm-banner-subtitle"> Everyone on board! </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row tm-banner-row" id="tm-section-search">
+                        <div class="tm-container-outer tm-position-relative" id="tm-section-4">
+                            <div class="form-control">
+                                <form id="form" class="form">
+                                    <h2> Register for the newsletter </h2>
+                                    <div class="form-control">
+                                        <label for="firstName"> First name </label>
+                                        <input type="text" id="firstName" placeholder="Enter your first name"/>
+                                        <small> Error Message </small>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="lastName">Last name </label>
+                                        <input type="text" id="lastName" placeholder="Enter your last name"/>
+                                        <small> Error Message </small>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="phoneNumber"> Phone number </label>
+                                        <input type="tel" id="phoneNumber" placeholder="+41799474390">
+                                        <small> Error Message </small>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="userName"> Username </label>
+                                        <input type="text" id="userName" placeholder="Enter username"/>
+                                        <small> Error Message </small>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="email"> E-Mail </label>
+                                        <input type="text" id="email" placeholder="Enter email"/>
+                                        <small> Error Message </small>
+                                    </div>
+                                    <div class="form-control">
+                                        <label for="password"> Password </label>
+                                        <input type="password" id="password" placeholder="Enter password"/>
+                                        <small> Error Message </small>
+                                    </div>
+
+                                    <button type="submit" id="mySubmit"> Submit </button>
+                                </form>
+                            </div>
+                            <script src="script/validate-inputs.js"></script>
+                            <script src="script/network.js"></script>
+                        </div>
+                    </div>
+                    <div class="tm-banner-overlay"></div>
+                </div>
+            </div>
+        </section>
+        <div class="tm-container-outer" id="tm-section-2">
+            <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+                <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                    <img src="style/img/tm-img-01.png" alt="Image">
+                    <img src="style/img/tm-img-04.png" alt="Image">
+                </div>
+                <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                    <h2 class=""> Wavy Adventures </h2>
+                    <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit ame.
+                    </p>
+                </div>
+            </section>
+            <section class="tm-slideshow-section">
+                <div class="tm-slideshow">
+                    <img src="style/img/tm-img-02.png" alt="Image">
+                    <img src="style/img/tm-img-03.png" alt="Image">
+                </div>
+                <div class="tm-slideshow-description tm-bg-primary">
+                    <h2 class=""> Sun, Sand and Sea </h2>
+                    <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit ame.
+                    </p>
+                </div>
+            </section>
+
+            <footer>
+                <p> M290 I <a href="https://www.bzz.ch/"> BZZ Horgen Oberdorf </a> I Annina Kündig & Sabrina Ritz </p>
+              </footer>
+        </div>
+    </div>
+
+ </div>
+</body>
+</html>
